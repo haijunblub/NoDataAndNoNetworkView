@@ -11,6 +11,7 @@
 
 @interface ViewController : UIViewController
 
+// 方便子类调用
 @property (nonatomic, strong) ZHNoDataView *noDataView;
 
 @end

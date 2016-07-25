@@ -13,29 +13,28 @@
 @end
 
 @implementation AViewController
+
 - (IBAction)noNet:(id)sender {
     
     [self.noDataView showInView:self.view withMainTitle:@"加载失败！" subtitle:@"请检查您的网络是否正常" imageName:@"jiazaishibai" whetherDisplayButton:YES buttonTitle:@"刷  新"];
     
     __weak typeof(self) weakSelf = self;
     self.noDataView.block = ^{
+        // 调用请求载数据的方法...请求成功后移除视图
         [weakSelf.noDataView removeNoDataAndNetworkView];
     };
 }
+
 - (IBAction)noData:(id)sender {
     
     [self.noDataView showInView:self.view withMainTitle:@"未找到附近停车场！" subtitle:nil imageName:@"chaxun" whetherDisplayButton:YES buttonTitle:@"刷  新"];
+    
     __weak typeof(self) weakSelf = self;
     self.noDataView.block = ^{
+        // 调用请求载数据的方法...请求成功后移除视图
         [weakSelf.noDataView removeNoDataAndNetworkView];
     };
 }
-
-- (void)click:(UIButton *)sender
-{
-    [self.noDataView removeNoDataAndNetworkView];
-}
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];

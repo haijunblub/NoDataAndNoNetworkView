@@ -15,8 +15,8 @@
 		841E18921D45D0FF004E39AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841E18901D45D0FF004E39AC /* LaunchScreen.storyboard */; };
 		841E189D1D45D0FF004E39AC /* NoDataViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 841E189C1D45D0FF004E39AC /* NoDataViewTests.m */; };
 		841E18A81D45D0FF004E39AC /* NoDataViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 841E18A71D45D0FF004E39AC /* NoDataViewUITests.m */; };
-		841E18B71D45D246004E39AC /* ZHNoDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 841E18B61D45D246004E39AC /* ZHNoDataView.m */; };
 		841E18BA1D45E4FF004E39AC /* AViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841E18B91D45E4FF004E39AC /* AViewController.m */; };
+		841E18CB1D46063B004E39AC /* ZHNoDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 841E18CA1D46063B004E39AC /* ZHNoDataView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,10 +53,10 @@
 		841E18A31D45D0FF004E39AC /* NoDataViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoDataViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		841E18A71D45D0FF004E39AC /* NoDataViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoDataViewUITests.m; sourceTree = "<group>"; };
 		841E18A91D45D0FF004E39AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		841E18B51D45D246004E39AC /* ZHNoDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHNoDataView.h; sourceTree = "<group>"; };
-		841E18B61D45D246004E39AC /* ZHNoDataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHNoDataView.m; sourceTree = "<group>"; };
 		841E18B81D45E4FF004E39AC /* AViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AViewController.h; sourceTree = "<group>"; };
 		841E18B91D45E4FF004E39AC /* AViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AViewController.m; sourceTree = "<group>"; };
+		841E18C91D46063B004E39AC /* ZHNoDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHNoDataView.h; sourceTree = "<group>"; };
+		841E18CA1D46063B004E39AC /* ZHNoDataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHNoDataView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,10 +107,9 @@
 		841E18811D45D0FF004E39AC /* NoDataView */ = {
 			isa = PBXGroup;
 			children = (
+				841E18C81D46063B004E39AC /* NoDataView */,
 				841E18851D45D0FF004E39AC /* AppDelegate.h */,
 				841E18861D45D0FF004E39AC /* AppDelegate.m */,
-				841E18B51D45D246004E39AC /* ZHNoDataView.h */,
-				841E18B61D45D246004E39AC /* ZHNoDataView.m */,
 				841E18881D45D0FF004E39AC /* ViewController.h */,
 				841E18891D45D0FF004E39AC /* ViewController.m */,
 				841E18B81D45E4FF004E39AC /* AViewController.h */,
@@ -148,6 +147,15 @@
 				841E18A91D45D0FF004E39AC /* Info.plist */,
 			);
 			path = NoDataViewUITests;
+			sourceTree = "<group>";
+		};
+		841E18C81D46063B004E39AC /* NoDataView */ = {
+			isa = PBXGroup;
+			children = (
+				841E18C91D46063B004E39AC /* ZHNoDataView.h */,
+				841E18CA1D46063B004E39AC /* ZHNoDataView.m */,
+			);
+			path = NoDataView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,8 +289,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				841E188A1D45D0FF004E39AC /* ViewController.m in Sources */,
+				841E18CB1D46063B004E39AC /* ZHNoDataView.m in Sources */,
 				841E18BA1D45E4FF004E39AC /* AViewController.m in Sources */,
-				841E18B71D45D246004E39AC /* ZHNoDataView.m in Sources */,
 				841E18871D45D0FF004E39AC /* AppDelegate.m in Sources */,
 				841E18841D45D0FF004E39AC /* main.m in Sources */,
 			);

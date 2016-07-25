@@ -16,9 +16,8 @@ typedef void (^ZHVoidBlock)();
 
 
 /**
- *  用来显示网络加载时无数据和无网络两种情况下的界面显示视图
- *  注意：可放在基类中创建，移除视图使用属性noDataAndNetworkView来调用
- *  使用属性refreshButton来给按钮添加方法, 每次执行刷新时先清空上一次的数据
+ *  用来显示网络加载时，无数据和无网络两种情况下的界面显示视图
+ *  注意：建议在基类中创建，暴露属性给子类调用
  *  @param view                 当前控制器的View
  *  @param mainTitle            主标题
  *  @param subtitle             副标题
