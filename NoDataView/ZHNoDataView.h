@@ -12,7 +12,6 @@ typedef void (^ZHVoidBlock)();
 
 @interface ZHNoDataView : UIView
 
-@property (nonatomic, strong) UIView *noDataAndNetworkView; // 无数据无网络界面展示的View
 @property (nonatomic, copy) ZHVoidBlock block;
 
 
